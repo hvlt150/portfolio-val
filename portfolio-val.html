@@ -151,12 +151,12 @@
 
     <!-- ÉCRAN DE SÉLECTION DE PROFIL -->
     <div id="profile-screen" class="fixed inset-0 z-[5000] flex flex-col items-center justify-center text-center text-white">
-        <h1 class="text-3xl md:text-5xl font-medium mb-12 italic tracking-tight text-white text-white">Qui est-ce ?</h1>
-        <div onclick="enterPortfolio()" class="profile-card flex flex-col items-center gap-6 cursor-pointer group text-center text-white text-white text-white">
+        <h1 class="text-3xl md:text-5xl font-medium mb-12 italic tracking-tight">Qui est-ce ?</h1>
+        <div onclick="enterPortfolio()" class="profile-card flex flex-col items-center gap-6 cursor-pointer group text-center text-white">
             <div class="relative w-32 h-32 md:w-44 md:h-44 rounded overflow-hidden transition-all duration-300 shadow-2xl group-hover:ring-4 ring-gray-400">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png" class="w-full h-full object-cover" alt="Valentine Profil">
             </div>
-            <span class="text-gray-500 group-hover:text-white text-2xl font-medium transition-colors uppercase tracking-widest text-white">Valentine</span>
+            <span class="text-gray-500 group-hover:text-white text-2xl font-medium transition-colors uppercase tracking-widest">Valentine</span>
         </div>
     </div>
 
@@ -164,9 +164,9 @@
     <div id="app-content" class="opacity-0">
         
         <nav id="navbar" class="fixed top-0 w-full z-[3000] flex items-center justify-between px-6 md:px-14 py-5 transition-all duration-500 bg-gradient-to-b from-black/95 to-transparent">
-            <div class="flex items-center gap-8 md:gap-12 text-white text-white text-white">
-                <h1 class="text-[#E50914] font-black text-2xl md:text-3xl lg:text-4xl tracking-tighter cursor-pointer flex-shrink-0 uppercase italic text-shadow-xl text-white text-white text-white">Valentine HU</h1>
-                <ul class="hidden lg:flex items-center gap-6 text-sm font-medium text-white text-white">
+            <div class="flex items-center gap-8 md:gap-12">
+                <h1 class="text-[#E50914] font-black text-2xl md:text-3xl lg:text-4xl tracking-tighter cursor-pointer flex-shrink-0 uppercase italic text-shadow-xl text-white">Valentine HU</h1>
+                <ul class="hidden lg:flex items-center gap-6 text-sm font-medium">
                     <li><a href="#" class="text-white">Accueil</a></li>
                     <li><a href="#profil" class="text-gray-300 hover:text-white transition">Profil</a></li>
                     <li><a href="#series" class="text-gray-300 hover:text-white transition">Compétences</a></li>
@@ -176,8 +176,8 @@
                     <li><a href="#contact" class="text-gray-300 hover:text-white transition">Contact</a></li>
                 </ul>
             </div>
-            <div class="flex items-center gap-6 text-white text-white text-white text-white">
-                <i data-lucide="search" class="w-5 h-5 cursor-pointer text-white text-white"></i>
+            <div class="flex items-center gap-6 text-white text-white">
+                <i data-lucide="search" class="w-5 h-5 cursor-pointer text-white"></i>
                 <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png" class="w-8 h-8 rounded cursor-pointer object-cover" alt="Avatar" onclick="openFullProfile()">
             </div>
         </nav>
@@ -189,207 +189,210 @@
                 <div class="absolute inset-0 hero-vignette"></div>
                 <div class="absolute inset-0 hero-bottom-vignette"></div>
             </div>
-            <div class="relative z-10 px-6 md:px-14 max-w-4xl mt-10 text-left text-white text-white">
-                <div class="flex items-center gap-3 mb-6 text-white text-white text-white">
-                    <span class="bg-red-600 text-white font-black text-lg px-2 rounded-sm shadow-xl text-white text-white">V</span>
-                    <span class="tracking-[.4em] font-bold text-gray-200 text-xs uppercase shadow-black drop-shadow-lg text-white">Valentine HU • Portfolio SISR</span>
+            <div class="relative z-10 px-6 md:px-14 max-w-4xl mt-10 text-left text-white">
+                <div class="flex items-center gap-3 mb-6 text-white">
+                    <span class="bg-red-600 text-white font-black text-lg px-2 rounded-sm shadow-xl">V</span>
+                    <span class="tracking-[.4em] font-bold text-gray-200 text-xs uppercase shadow-black drop-shadow-lg">Valentine HU • Portfolio SISR</span>
                 </div>
                 <h2 class="text-5xl md:text-7xl lg:text-8xl font-black mb-8 uppercase italic tracking-tighter leading-[1.1] drop-shadow-2xl text-white">BTS SIO <br> SISR</h2>
                 
-                <p class="text-lg md:text-xl text-white mb-10 max-w-2xl drop-shadow-2xl font-medium leading-relaxed italic text-white text-white text-white">
+                <p class="text-lg md:text-xl text-white mb-10 max-w-2xl drop-shadow-2xl font-medium leading-relaxed italic">
                     Actuellement étudiante en BTS Services Informatiques aux Organisations (SIO), option SISR, je me passionne pour la gestion des infrastructures et la cybersécurité. Je souhaiterai devenir Administratrice systèmes et réseaux.
                 </p>
 
                 <div class="flex flex-wrap gap-4 items-center">
-                    <button onclick="openBTSPresentation()" class="btn-netflix btn-white gap-3 shadow-xl font-bold text-white text-black text-black">
-                        <i data-lucide="play" class="fill-current w-6 h-6 text-black text-black"></i> <span class="text-black">Voir le BTS</span>
+                    <button onclick="openBTSPresentation()" class="btn-netflix btn-white gap-3 shadow-xl font-bold text-black">
+                        <i data-lucide="play" class="fill-current w-6 h-6 text-black"></i> <span>Voir le BTS</span>
                     </button>
-                    <button onclick="openFullProfile()" class="btn-netflix btn-gray gap-3 backdrop-blur-md font-bold text-white text-white text-white">
-                        <i data-lucide="info" class="w-6 h-6 text-white text-white"></i> <span>Voir mon profil</span>
+                    <button onclick="openFullProfile()" class="btn-netflix btn-gray gap-3 backdrop-blur-md font-bold text-white">
+                        <i data-lucide="info" class="w-6 h-6"></i> <span>Voir mon profil</span>
                     </button>
                 </div>
             </div>
         </header>
 
-        <main class="relative z-20 pb-20 space-y-24 -mt-16 text-white text-white text-white">
+        <main class="relative z-20 pb-20 space-y-24 -mt-16 text-white">
             
             <!-- SECTION PROFIL -->
-            <section id="profil" class="px-6 md:px-14 pt-32 text-left text-white">
-                <h3 class="text-2xl md:text-3xl font-bold mb-6 flex items-center gap-2 text-white text-left text-white text-white">Mon Portrait <i data-lucide="chevron-right" class="w-6 h-6 text-gray-500"></i></h3>
-                <div class="netflix-row text-left text-white">
+            <section id="profil" class="px-6 md:px-14 pt-32 text-left">
+                <h3 class="text-2xl md:text-3xl font-bold mb-6 flex items-center gap-2 text-white text-left">Mon Portrait <i data-lucide="chevron-right" class="w-6 h-6 text-gray-500"></i></h3>
+                <div class="netflix-row text-left">
                     <div class="card" onclick="openFullProfile()" style="min-width: 320px; height: 180px;">
                         <img src="25294embeddedImage.jpg" class="object-cover" alt="Portrait Valentine">
-                        <div class="card-info text-left text-white text-white">
-                            <h4 class="font-black text-sm uppercase italic text-white text-white text-white text-white">Valentine HU</h4>
-                            <p class="text-[10px] text-gray-400 mt-1 uppercase text-white text-white text-white">Étudiante motivée</p>
+                        <div class="card-info text-left">
+                            <h4 class="font-black text-sm uppercase italic text-white">Valentine HU</h4>
+                            <p class="text-[10px] text-gray-400 mt-1 uppercase">Étudiante motivée</p>
                         </div>
                     </div>
                 </div>
             </section>
 
             <!-- SECTION COMPÉTENCES -->
-            <section id="series" class="px-6 md:px-14 pt-10 text-left text-white">
-                <h3 class="text-2xl md:text-3xl font-bold mb-10 flex items-center gap-2 text-white text-left text-white text-white text-white">Compétences <i data-lucide="chevron-right" class="w-6 h-6 text-gray-500 text-white text-white text-white text-white"></i></h3>
+            <section id="series" class="px-6 md:px-14 pt-10 text-left">
+                <h3 class="text-2xl md:text-3xl font-bold mb-10 flex items-center gap-2 text-white text-left">Compétences <i data-lucide="chevron-right" class="w-6 h-6 text-gray-500"></i></h3>
                 
-                <div class="skills-container text-left text-white text-white text-white text-white text-white">
-                    <div class="skill-category-block text-white text-white text-white text-white">
-                        <div class="skill-category-title text-white text-white text-white text-white"><i data-lucide="network"></i> RÉSEAUX & SYSTÈMES</div>
-                        <div class="mb-6 text-white text-white text-white text-white text-white text-white text-white">
-                            <div class="text-[#E50914] font-bold mb-1 text-white text-white text-white text-white text-white text-white">Protocoles & Services</div>
-                            <div class="text-sm text-gray-300 leading-relaxed text-white text-white text-white text-white text-white">Modèle <strong>OSI</strong>, <strong>TCP/IP</strong> et <strong>ICMP</strong>. Configuration <strong>DHCP</strong>, <strong>DNS</strong> et <strong>NAT</strong>.</div>
+                <div class="skills-container text-left text-white">
+                    <div class="skill-category-block">
+                        <div class="skill-category-title"><i data-lucide="network"></i> RÉSEAUX & SYSTÈMES</div>
+                        <div class="mb-6">
+                            <div class="text-[#E50914] font-bold mb-1">Protocoles & Services</div>
+                            <div class="text-sm text-gray-300 leading-relaxed">Modèle <strong>OSI</strong>, <strong>TCP/IP</strong> et <strong>ICMP</strong>. Configuration <strong>DHCP</strong>, <strong>DNS</strong> et <strong>NAT</strong>.</div>
                         </div>
-                        <div class="text-white text-white text-white text-white">
-                            <div class="text-[#E50914] font-bold mb-1 text-white text-white text-white text-white text-white text-white text-white text-white">Administration</div>
-                            <div class="text-sm text-gray-300 leading-relaxed text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white">Windows, Linux, <strong>AD</strong> (Active Directory), <strong>GPO</strong> (Group Policy Objects).</div>
-                        </div>
-                    </div>
-
-                    <div class="skill-category-block text-white text-white text-white text-white text-white text-white">
-                        <div class="skill-category-title text-white text-white text-white text-white text-white text-white text-white text-white"><i data-lucide="terminal"></i> SCRIPTING & OUTILS</div>
-                        <div class="mb-4 text-white text-white text-white text-white text-white text-white text-white text-white text-white">
-                            <div class="text-[#E50914] font-bold mb-1 text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white">Scripting</div>
-                            <div class="text-sm text-gray-300 leading-relaxed text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white">Automatisation via fichiers <strong>Batch</strong>, scripts <strong>Powershell</strong> et commandes <strong>CMD</strong>.</div>
-                        </div>
-                        <div class="mb-4 text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white">
-                            <div class="text-[#E50914] font-bold mb-1 text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white">Virtualisation</div>
-                            <div class="text-sm text-gray-300 leading-relaxed text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white">Utilisation de <strong>VMware</strong> et <strong>VirtualBox</strong> pour la simulation.</div>
-                        </div>
-                        <div class="text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white">
-                            <div class="text-[#E50914] font-bold mb-1 text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white">Gestion IT</div>
-                            <div class="text-sm text-gray-300 leading-relaxed text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white">Ticketing et inventaire via <strong>GLPI</strong> et <strong>NinjaOne</strong> (RMM).</div>
+                        <div>
+                            <div class="text-[#E50914] font-bold mb-1">Administration</div>
+                            <div class="text-sm text-gray-300 leading-relaxed">Windows, Linux, <strong>AD</strong> (Active Directory), <strong>GPO</strong> (Group Policy Objects).</div>
                         </div>
                     </div>
 
-                    <div class="skill-category-block text-white text-white text-white text-white text-white text-white text-white text-white">
-                        <div class="skill-category-title text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white"><i data-lucide="code-2"></i> WEB & DEV</div>
-                        <div class="mb-6 text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white">
-                            <div class="text-[#E50914] font-bold mb-1 text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white">Langages Web</div>
-                            <div class="text-sm text-gray-300 leading-relaxed text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white"><strong>HTML</strong> et <strong>CSS</strong>. Apprentissage <strong>Python</strong> pour l'automatisation.</div>
+                    <div class="skill-category-block">
+                        <div class="skill-category-title"><i data-lucide="terminal"></i> SCRIPTING & OUTILS</div>
+                        <div class="mb-4">
+                            <div class="text-[#E50914] font-bold mb-1">Scripting</div>
+                            <div class="text-sm text-gray-300 leading-relaxed">Automatisation via fichiers <strong>Batch</strong>, scripts <strong>Powershell</strong> et commandes <strong>CMD</strong>.</div>
                         </div>
-                        <div class="mb-6 text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white">
-                            <div class="text-[#E50914] font-bold mb-1 text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white">Bases de données</div>
-                            <div class="text-sm text-gray-300 leading-relaxed text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white">Gestion via <strong>SQL</strong> sur <strong>MySQL</strong> et <strong>MariaDB</strong>.</div>
+                        <div class="mb-4">
+                            <div class="text-[#E50914] font-bold mb-1">Virtualisation</div>
+                            <div class="text-sm text-gray-300 leading-relaxed">Utilisation de <strong>VMware</strong> et <strong>VirtualBox</strong> pour la simulation.</div>
                         </div>
-                        <div class="text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white">
-                            <div class="text-[#E50914] font-bold mb-1 text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white">Gestion de contenu</div>
-                            <div class="text-sm text-gray-300 leading-relaxed text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white">Solutions <strong>CMS</strong> : WordPress, JOOMLA.</div>
+                        <div>
+                            <div class="text-[#E50914] font-bold mb-1">Gestion IT</div>
+                            <div class="text-sm text-gray-300 leading-relaxed">Ticketing et inventaire via <strong>GLPI</strong> et <strong>NinjaOne</strong> (RMM).</div>
                         </div>
                     </div>
 
-                    <div class="skill-category-block text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white">
-                        <div class="skill-category-title text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white"><i data-lucide="info"></i> LEXIQUE TECHNIQUE</div>
-                        <div class="space-y-2 text-left text-white text-white text-white text-white text-white text-white text-white text-white">
-                            <div class="text-sm text-gray-300 text-white text-white text-white text-white text-white"><strong class="text-[#E50914]">OSI :</strong> Modèle de référence en 7 couches.</div>
-                            <div class="text-sm text-gray-300 text-white text-white text-white text-white text-white text-white text-white text-white text-white"><strong class="text-[#E50914]">TCP/IP :</strong> Standard de transfert de données Internet.</div>
-                            <div class="text-sm text-gray-300 text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white"><strong class="text-[#E50914]">DHCP :</strong> Attribution automatique d'IP.</div>
-                            <div class="text-sm text-gray-300 text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white"><strong class="text-[#E50914]">DNS :</strong> "Annuaire" traduisant noms en IP.</div>
-                            <div class="text-sm text-gray-300 text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white"><strong class="text-[#E50914]">NinjaOne :</strong> Solution RMM (Monitoring & Management).</div>
-                            <hr class="border-zinc-700 my-4 text-white text-white text-white text-white">
-                            <div class="text-sm text-gray-300 text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white"><strong class="text-[#E50914]">HTML / CSS :</strong> Structure et style web.</div>
-                            <div class="text-sm text-gray-300 text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white"><strong class="text-[#E50914]">SQL / CMS :</strong> Données et gestion dynamique.</div>
+                    <div class="skill-category-block">
+                        <div class="skill-category-title"><i data-lucide="code-2"></i> WEB & DEV</div>
+                        <div class="mb-6">
+                            <div class="text-[#E50914] font-bold mb-1">Langages Web</div>
+                            <div class="text-sm text-gray-300 leading-relaxed"><strong>HTML</strong> et <strong>CSS</strong>. Apprentissage <strong>Python</strong> pour l'automatisation.</div>
+                        </div>
+                        <div class="mb-6">
+                            <div class="text-[#E50914] font-bold mb-1">Bases de données</div>
+                            <div class="text-sm text-gray-300 leading-relaxed">Gestion via <strong>SQL</strong> sur <strong>MySQL</strong> et <strong>MariaDB</strong>.</div>
+                        </div>
+                        <div>
+                            <div class="text-[#E50914] font-bold mb-1">Gestion de contenu</div>
+                            <div class="text-sm text-gray-300 leading-relaxed">Solutions <strong>CMS</strong> : WordPress, JOOMLA.</div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category-block">
+                        <div class="skill-category-title"><i data-lucide="info"></i> LEXIQUE TECHNIQUE</div>
+                        <div class="space-y-2 text-left">
+                            <div class="text-sm text-gray-300"><strong class="text-[#E50914]">OSI :</strong> Modèle de référence en 7 couches.</div>
+                            <div class="text-sm text-gray-300"><strong class="text-[#E50914]">TCP/IP :</strong> Standard de transfert de données Internet.</div>
+                            <div class="text-sm text-gray-300"><strong class="text-[#E50914]">DHCP :</strong> Attribution automatique d'IP.</div>
+                            <div class="text-sm text-gray-300"><strong class="text-[#E50914]">DNS :</strong> "Annuaire" traduisant noms en IP.</div>
+                            <div class="text-sm text-gray-300"><strong class="text-[#E50914]">NinjaOne :</strong> Solution RMM (Monitoring & Management).</div>
+                            <hr class="border-zinc-700 my-4">
+                            <div class="text-sm text-gray-300"><strong>HTML / CSS :</strong> Structure et style web.</div>
+                            <div class="text-sm text-gray-300"><strong class="text-[#E50914]">SQL / CMS :</strong> Données et gestion dynamique.</div>
                         </div>
                     </div>
                 </div>
             </section>
 
             <!-- SECTION PROJETS -->
-            <section id="projets" class="px-6 md:px-14 pt-10 text-left text-white text-white text-white text-white text-white text-white text-white text-white">
+            <section id="projets" class="px-6 md:px-14 pt-10 text-left text-white">
                 <h3 class="text-2xl md:text-3xl font-bold mb-6 flex items-center gap-2 text-white">Mes Projets Réalisés <i data-lucide="chevron-right" class="w-6 h-6 text-gray-500"></i></h3>
-                <div class="netflix-row text-white text-white text-white text-white text-white text-white">
+                <div class="netflix-row text-white">
                     <div class="card" onclick="openModal('proj-mfa')">
                         <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=600" alt="MFA">
-                        <div class="card-info text-left text-white text-white text-white text-white text-white text-white text-white text-white"><h4 class="font-black text-sm uppercase italic text-white text-white text-white text-white text-white text-white text-white text-white">MFA Offline / Online</h4></div>
+                        <div class="card-info text-left"><h4 class="font-black text-sm uppercase italic text-white">MFA Offline / Online</h4></div>
                     </div>
                     <div class="card" onclick="openModal('proj-glpi')">
                         <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=600" alt="GLPI">
-                        <div class="card-info text-left text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white"><h4 class="font-black text-sm uppercase italic text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white">GLPI - Gestion de Parc</h4></div>
+                        <div class="card-info text-left"><h4 class="font-black text-sm uppercase italic text-white">GLPI - Gestion de Parc</h4></div>
                     </div>
                     <div class="card" onclick="openModal('proj-gsb')">
                         <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=600" alt="Projet GSB">
-                        <div class="card-info text-left text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white"><h4 class="font-black text-sm uppercase italic text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white">Projet GSB</h4></div>
+                        <div class="card-info text-left"><h4 class="font-black text-sm uppercase italic text-white">Projet GSB</h4></div>
                     </div>
                 </div>
             </section>
 
             <!-- SECTION STAGES -->
-            <section id="liste" class="px-6 md:px-14 pt-10 text-left text-white text-white text-white text-white text-white text-white text-white text-white">
+            <section id="liste" class="px-6 md:px-14 pt-10 text-left text-white">
                 <h3 class="text-2xl md:text-3xl font-bold mb-6 flex items-center gap-2 text-white">Mes Stages & Documents <i data-lucide="chevron-right" class="w-6 h-6 text-gray-500"></i></h3>
-                <div class="netflix-row text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white">
+                <div class="netflix-row">
+                    <!-- SAISON 2 -->
                     <div class="card" onclick="openModal('stage-xelya-2')">
-                        <div class="absolute inset-0 bg-zinc-800 p-6 flex flex-col justify-center border-l-4 border-red-600 text-white text-white text-white text-white text-white text-white text-white">
-                            <h4 class="font-black text-lg uppercase italic text-white text-white text-white text-white text-white text-white text-white">XELYA (Saison 2)</h4>
-                            <p class="text-[10px] text-gray-400 mt-1 uppercase tracking-wider text-white text-white text-white text-white text-white text-white text-white text-white text-white">Administration & Monitoring</p>
+                        <div class="absolute inset-0 bg-zinc-800 p-6 flex flex-col justify-center border-l-4 border-red-600">
+                            <h4 class="font-black text-lg uppercase italic text-white">XELYA (Saison 2)</h4>
+                            <p class="text-[10px] text-gray-400 mt-1 uppercase tracking-wider">Administration & Monitoring</p>
                         </div>
                     </div>
+                    <!-- SAISON 1 -->
                     <div class="card" onclick="openModal('stage-xelya-1')">
-                        <div class="absolute inset-0 bg-zinc-800 p-6 flex flex-col justify-center border-l-4 border-gray-400 text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white">
-                            <h4 class="font-black text-lg uppercase italic text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white">XELYA (Saison 1)</h4>
-                            <p class="text-[10px] text-white/70 font-bold mt-1 uppercase tracking-wider text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white">Technicien Support</p>
+                        <div class="absolute inset-0 bg-zinc-800 p-6 flex flex-col justify-center border-l-4 border-gray-400">
+                            <h4 class="font-black text-lg uppercase italic text-white">XELYA (Saison 1)</h4>
+                            <p class="text-[10px] text-white/70 font-bold mt-1 uppercase tracking-wider text-white">Technicien Support</p>
                         </div>
                     </div>
+                    <!-- GRILLE COMP -->
                     <div class="card" onclick="openModal('grille-comp')">
-                        <div class="absolute inset-0 bg-zinc-900 p-6 flex flex-col justify-center border-l-4 border-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white">
-                            <i data-lucide="layout-grid" class="text-red-600 w-8 h-8 mb-2 text-white text-white text-white text-white text-white text-white"></i>
-                            <h4 class="font-black text-lg uppercase italic text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white">Compétences</h4>
-                            <p class="text-[10px] text-gray-400 mt-1 uppercase text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white">Tableau de synthèse</p>
+                        <div class="absolute inset-0 bg-zinc-900 p-6 flex flex-col justify-center border-l-4 border-white">
+                            <i data-lucide="layout-grid" class="text-red-600 w-8 h-8 mb-2"></i>
+                            <h4 class="font-black text-lg uppercase italic text-white">Compétences</h4>
+                            <p class="text-[10px] text-gray-400 mt-1 uppercase">Tableau de synthèse</p>
                         </div>
                     </div>
                 </div>
             </section>
 
             <!-- SECTION VEILLE -->
-            <section id="veille" class="px-6 md:px-14 pt-10 text-left text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white">
-                <h3 class="text-2xl md:text-3xl font-bold mb-6 flex items-center gap-2 text-white text-white text-white text-white text-white text-white text-white text-white text-white">Veille <i data-lucide="chevron-right" class="w-6 h-6 text-gray-500"></i></h3>
-                <div class="netflix-row text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white">
+            <section id="veille" class="px-6 md:px-14 pt-10 text-left text-white">
+                <h3 class="text-2xl md:text-3xl font-bold mb-6 flex items-center gap-2 text-white">Veille <i data-lucide="chevron-right" class="w-6 h-6 text-gray-500"></i></h3>
+                <div class="netflix-row">
                     <div class="card" onclick="openModal('veille-tech')">
                         <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=600" alt="Veille Technologique IA">
-                        <div class="card-info text-left text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white">
-                            <h4 class="font-black text-sm uppercase italic text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white">Veille Technologique</h4>
-                            <p class="text-[10px] text-gray-400 mt-1 uppercase tracking-wider text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white">L'IA en Cybersécurité</p>
+                        <div class="card-info text-left">
+                            <h4 class="font-black text-sm uppercase italic text-white">Veille Technologique</h4>
+                            <p class="text-[10px] text-gray-400 mt-1 uppercase tracking-wider">L'IA en Cybersécurité</p>
                         </div>
                     </div>
                 </div>
             </section>
 
             <!-- SECTION CONTACT -->
-            <section id="contact" class="px-6 md:px-14 pt-10 text-left pb-20 text-white text-white text-white text-white">
-                <h3 class="text-2xl md:text-3xl font-bold mb-10 flex items-center gap-2 text-white uppercase italic text-white text-white text-white text-white text-white text-white text-white">Me contacter <i data-lucide="chevron-right" class="w-6 h-6 text-gray-500 text-white text-white text-white text-white text-white text-white"></i></h3>
+            <section id="contact" class="px-6 md:px-14 pt-10 text-left pb-20 text-white">
+                <h3 class="text-2xl md:text-3xl font-bold mb-10 flex items-center gap-2 text-white uppercase italic">Me contacter <i data-lucide="chevron-right" class="w-6 h-6 text-gray-500"></i></h3>
                 
-                <div class="max-w-2xl bg-zinc-900/50 p-8 md:p-12 rounded-lg border border-zinc-800 shadow-2xl text-white text-white text-white">
-                    <form id="contact-form" action="https://formspree.io/f/xeervzny" method="POST" class="space-y-6 text-white text-white text-white">
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-white text-white text-white text-white text-white text-white">
-                            <div class="space-y-2 text-white text-white text-white text-white">
-                                <label class="block text-xs font-black uppercase tracking-widest text-gray-400 text-white text-white text-white text-white text-white text-white text-white">Prénom :</label>
-                                <input type="text" name="prenom" required class="w-full bg-[#333] border-none rounded p-4 text-white focus:ring-2 ring-red-600 transition outline-none text-white text-white" placeholder="Votre prénom">
+                <div class="max-w-2xl bg-zinc-900/50 p-8 md:p-12 rounded-lg border border-zinc-800 shadow-2xl">
+                    <form id="contact-form" action="https://formspree.io/f/xeervzny" method="POST" class="space-y-6 text-white">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="space-y-2">
+                                <label class="block text-xs font-black uppercase tracking-widest text-gray-400">Prénom :</label>
+                                <input type="text" name="prenom" required class="w-full bg-[#333] border-none rounded p-4 text-white focus:ring-2 ring-red-600 transition outline-none" placeholder="Votre prénom">
                             </div>
-                            <div class="space-y-2 text-white text-white text-white text-white text-white text-white text-white text-white">
-                                <label class="block text-xs font-black uppercase tracking-widest text-gray-400 text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white">Nom :</label>
-                                <input type="text" name="nom" required class="w-full bg-[#333] border-none rounded p-4 text-white focus:ring-2 ring-red-600 transition outline-none text-white text-white text-white text-white text-white" placeholder="Votre nom">
+                            <div class="space-y-2">
+                                <label class="block text-xs font-black uppercase tracking-widest text-gray-400">Nom :</label>
+                                <input type="text" name="nom" required class="w-full bg-[#333] border-none rounded p-4 text-white focus:ring-2 ring-red-600 transition outline-none" placeholder="Votre nom">
                             </div>
                         </div>
-                        <div class="space-y-2 text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white">
-                            <label class="block text-xs font-black uppercase tracking-widest text-gray-400 text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white">Votre email :</label>
-                            <input type="email" name="email" required class="w-full bg-[#333] border-none rounded p-4 text-white focus:ring-2 ring-red-600 transition outline-none text-white text-white text-white text-white text-white text-white text-white text-white text-white" placeholder="email@domaine.com">
+                        <div class="space-y-2">
+                            <label class="block text-xs font-black uppercase tracking-widest text-gray-400">Votre email :</label>
+                            <input type="email" name="email" required class="w-full bg-[#333] border-none rounded p-4 text-white focus:ring-2 ring-red-600 transition outline-none" placeholder="email@domaine.com">
                         </div>
-                        <div class="space-y-2 text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white">
-                            <label class="block text-xs font-black uppercase tracking-widest text-gray-400 text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white">Votre message :</label>
-                            <textarea name="message" required rows="5" class="w-full bg-[#333] border-none rounded p-4 text-white focus:ring-2 ring-red-600 transition outline-none resize-none text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white" placeholder="Comment puis-je vous aider ?"></textarea>
+                        <div class="space-y-2">
+                            <label class="block text-xs font-black uppercase tracking-widest text-gray-400">Votre message :</label>
+                            <textarea name="message" required rows="5" class="w-full bg-[#333] border-none rounded p-4 text-white focus:ring-2 ring-red-600 transition outline-none resize-none" placeholder="Comment puis-je vous aider ?"></textarea>
                         </div>
-                        <button type="submit" id="contact-form-submit" class="btn-netflix btn-red w-full uppercase tracking-[0.2em] font-black text-sm text-white transition-all text-white text-white text-white text-white text-white text-white">
+                        <button type="submit" id="contact-form-submit" class="btn-netflix btn-red w-full uppercase tracking-[0.2em] font-black text-sm text-white transition-all">
                             Envoyer le message
                         </button>
-                        <div id="contact-form-status" class="hidden text-center p-6 rounded-md font-bold text-sm bg-green-900/30 text-green-400 border border-green-800 space-y-4 text-white text-white text-white text-white text-white text-white text-white text-white">
-                            <div class="flex items-center justify-center gap-2 text-white text-white text-white text-white text-white text-white text-white text-white"><i data-lucide="check-circle" class="w-5 h-5 text-white text-white text-white text-white text-white text-white"></i> Merci ! Votre message a été envoyé.</div>
-                            <button type="button" onclick="resetContactForm()" class="text-white underline text-xs uppercase tracking-widest hover:text-gray-300 text-white text-white text-white text-white text-white text-white text-white text-white text-white">Envoyer un nouveau message</button>
+                        <div id="contact-form-status" class="hidden text-center p-6 rounded-md font-bold text-sm bg-green-900/30 text-green-400 border border-green-800 space-y-4">
+                            <div class="flex items-center justify-center gap-2"><i data-lucide="check-circle" class="w-5 h-5"></i> Merci ! Votre message a été envoyé.</div>
+                            <button type="button" onclick="resetContactForm()" class="text-white underline text-xs uppercase tracking-widest hover:text-gray-300">Envoyer un nouveau message</button>
                         </div>
                     </form>
                 </div>
             </section>
         </main>
 
-        <footer class="px-6 py-20 bg-black text-zinc-600 text-xs text-center border-t border-zinc-900 uppercase tracking-widest text-white text-white text-white text-white">
-            <div class="flex flex-col items-center gap-4">
-                <div class="flex gap-6 mb-2">
+        <footer class="px-6 py-20 bg-black text-zinc-600 text-xs text-center border-t border-zinc-900 uppercase tracking-widest text-white">
+            <div class="flex flex-col items-center gap-4 text-white">
+                <div class="flex gap-6 mb-2 text-white text-white">
                     <a href="https://www.linkedin.com/in/valentine-hu" target="_blank" class="text-gray-400 hover:text-[#0077B5] transition-colors">
                         <i data-lucide="linkedin" class="w-6 h-6"></i>
                     </a>
@@ -399,41 +402,37 @@
         </footer>
     </div>
 
-    <button id="back-to-top" onclick="scrollToTop()" aria-label="Retour en haut"><i data-lucide="arrow-up" class="w-6 h-6 text-white text-white text-white text-white text-white text-white text-white"></i></button>
+    <button id="back-to-top" onclick="scrollToTop()" aria-label="Retour en haut"><i data-lucide="arrow-up" class="w-6 h-6 text-white text-white"></i></button>
 
     <!-- MODALE GÉNÉRIQUE -->
     <div id="modal-container" class="modal">
-        <div class="min-h-screen flex items-center justify-center p-4 text-white text-white text-white text-white text-white text-white text-white">
+        <div class="min-h-screen flex items-center justify-center p-4">
             <div class="bg-[#181818] w-full max-w-3xl rounded-xl overflow-hidden shadow-2xl relative text-white animate-in zoom-in duration-300">
-                <button onclick="closeModal()" class="absolute top-6 right-6 z-[6100] bg-black/70 p-2 rounded-full hover:bg-black transition text-white text-white text-white text-white text-white text-white text-white"><i data-lucide="x"></i></button>
-                <div class="p-8 md:p-12 text-left text-white text-white text-white text-white text-white text-white text-white text-white">
-                    <h2 class="text-4xl font-black uppercase italic mb-8 border-l-4 border-red-600 pl-4 inline-block text-left text-white text-white text-white text-white text-white text-white text-white text-white text-white" id="modal-title">Titre</h2>
-                    <div id="modal-description" class="text-gray-300 leading-relaxed text-lg mb-10 text-white text-white text-white text-white text-white text-white text-white"></div>
-                    <div id="modal-pdf-action" class="hidden flex justify-center">
-                        <a id="btn-open-pdf-link" href="" target="_blank" rel="noopener noreferrer" class="btn-netflix btn-white gap-3 px-12 mt-4 shadow-xl text-black font-bold text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white">
-                            <i data-lucide="external-link"></i> <span>Consulter le document (PDF)</span>
-                        </a>
-                    </div>
+                <button onclick="closeModal()" class="absolute top-6 right-6 z-[6100] bg-black/70 p-2 rounded-full hover:bg-black transition text-white"><i data-lucide="x"></i></button>
+                <div class="p-8 md:p-12 text-left text-white">
+                    <h2 class="text-4xl font-black uppercase italic mb-8 border-l-4 border-red-600 pl-4 inline-block text-left text-white" id="modal-title">Titre</h2>
+                    <div id="modal-description" class="text-gray-300 leading-relaxed text-lg mb-10"></div>
+                    <div id="modal-pdf-action" class="hidden flex flex-wrap justify-center gap-4"></div>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- MODALE PRÉSENTATION BTS SIO -->
-    <div id="bts-presentation-modal" class="modal text-white text-white text-white text-white">
-        <div class="min-h-screen flex flex-col items-center justify-center p-4 text-left text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white">
-            <div class="bg-[#181818] w-full max-w-4xl rounded-xl overflow-hidden shadow-2xl relative text-white">
-                <button onclick="closeBTSPresentation()" class="absolute top-6 right-6 z-[4100] p-2 bg-black/50 rounded-full hover:bg-white hover:text-black transition text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white"><i data-lucide="x" class="w-6 h-6 text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white"></i></button>
-                <div class="p-10 text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white">
-                    <h2 class="text-4xl font-black uppercase italic mb-8 text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white">Le BTS SIO</h2>
-                    <div class="flex gap-8 border-b border-zinc-800 mb-8 pb-2 overflow-x-auto whitespace-nowrap text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white">
+    <div id="bts-presentation-modal" class="modal text-white">
+        <div class="min-h-screen flex flex-col items-center justify-center p-4 text-left text-white">
+            <div class="bg-[#181818] w-full max-w-4xl rounded-xl overflow-hidden shadow-2xl relative text-white text-white">
+                <button onclick="closeBTSPresentation()" class="absolute top-6 right-6 z-[4100] p-2 bg-black/50 rounded-full hover:bg-white hover:text-black transition text-white"><i data-lucide="x" class="w-6 h-6 text-white"></i></button>
+                <div class="p-10 text-white">
+                    <h2 class="text-4xl font-black uppercase italic mb-8 text-white">Le BTS SIO</h2>
+                    <div class="flex gap-8 border-b border-zinc-800 mb-8 pb-2 overflow-x-auto whitespace-nowrap">
                         <button onclick="switchBTSTab('aperçu')" class="tab-btn active" id="tab-bts-aperçu">Aperçu</button>
                         <button onclick="switchBTSTab('sisr')" class="tab-btn" id="tab-bts-sisr">Option SISR</button>
                         <button onclick="switchBTSTab('slam')" class="tab-btn" id="tab-bts-slam">Option SLAM</button>
                     </div>
-                    <div id="content-bts-aperçu" class="bts-tab-content text-gray-300 leading-relaxed text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white">Le BTS Services Informatiques aux Organisations forme aux métiers de la gestion de projets numériques et de la mise en place de services informatiques performants au sein des entreprises.</div>
-                    <div id="content-bts-sisr" class="bts-tab-content hidden text-gray-300 leading-relaxed text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white">L'option <strong>SISR</strong> (Solutions d'Infrastructure, Systèmes et Réseaux) prépare à l'installation, à la maintenance et à la sécurisation des infrastructures réseau. Elle se concentre sur l'administration système et la cybersécurité.</div>
-                    <div id="content-bts-slam" class="bts-tab-content hidden text-gray-300 leading-relaxed text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white">L'option <strong>SLAM</strong> (Solutions Logicielles et Applications Métier) prépare à la conception, au développement, à la maintenance et à l'intégration d'applications informatiques au sein d'une organisation.</div>
+                    <div id="content-bts-aperçu" class="bts-tab-content text-gray-300 leading-relaxed text-white">Le BTS Services Informatiques aux Organisations forme aux métiers de la gestion de projets numériques et de la mise en place de services informatiques performants au sein des entreprises.</div>
+                    <div id="content-bts-sisr" class="bts-tab-content hidden text-gray-300 leading-relaxed text-white">L'option <strong>SISR</strong> (Solutions d'Infrastructure, Systèmes et Réseaux) prépare à l'installation, à la maintenance et à la sécurisation des infrastructures réseau. Elle se concentre sur l'administration système et la cybersécurité.</div>
+                    <div id="content-bts-slam" class="bts-tab-content hidden text-gray-300 leading-relaxed text-white">L'option <strong>SLAM</strong> (Solutions Logicielles et Applications Métier) prépare à la conception, au développement, à la maintenance et à l'intégration d'applications informatiques au sein d'une organisation.</div>
                 </div>
             </div>
         </div>
@@ -441,51 +440,51 @@
 
     <!-- PAGE DE DÉTAILS PROFIL -->
     <div id="profile-detail-modal" class="modal">
-        <div class="min-h-screen flex items-center justify-center p-4 text-left text-white text-white text-white text-white text-white text-white text-white text-white text-white">
+        <div class="min-h-screen flex items-center justify-center p-4 text-left text-white">
             <div class="bg-[#181818] w-full max-w-5xl rounded-xl overflow-hidden shadow-2xl relative text-white animate-in zoom-in duration-300">
-                <button onclick="closeFullProfile()" class="absolute top-6 right-6 z-[4100] bg-black/50 p-2 rounded-full hover:bg-white hover:text-black transition text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white"><i data-lucide="x" class="w-6 h-6 text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white"></i></button>
-                <div class="grid grid-cols-1 md:grid-cols-3 text-white text-white text-white text-white text-white text-white text-white text-white">
+                <button onclick="closeFullProfile()" class="absolute top-6 right-6 z-[4100] bg-black/50 p-2 rounded-full hover:bg-white hover:text-black transition text-white"><i data-lucide="x" class="w-6 h-6 text-white text-white"></i></button>
+                <div class="grid grid-cols-1 md:grid-cols-3">
                     <div class="h-64 md:h-auto bg-cover bg-center" style="background-image: url('25294embeddedImage.jpg');"></div>
                     <div class="col-span-2 p-8 md:p-12">
-                        <div class="flex flex-wrap justify-between items-center border-b border-gray-700 mb-8 pb-4 text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white">
-                            <div class="flex gap-10 overflow-x-auto whitespace-nowrap text-white text-white text-white text-white text-white text-white text-white text-white text-white">
-                                <button onclick="switchTab('cv-profil')" id="tab-cv-profil" class="tab-btn active font-bold text-xs tracking-widest uppercase text-white text-white text-white text-white text-white text-white text-white">PROFIL</button>
-                                <button onclick="switchTab('cv-formation')" id="tab-cv-formation" class="tab-btn font-bold text-xs tracking-widest uppercase text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white">FORMATION</button>
-                                <button onclick="switchTab('cv-certifs')" id="tab-cv-certifs" class="tab-btn font-bold text-xs tracking-widest uppercase text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white">CERTIFICATIONS</button>
+                        <div class="flex flex-wrap justify-between items-center border-b border-gray-700 mb-8 pb-4 text-white">
+                            <div class="flex gap-10 overflow-x-auto whitespace-nowrap">
+                                <button onclick="switchTab('cv-profil')" id="tab-cv-profil" class="tab-btn active font-bold text-xs tracking-widest uppercase">PROFIL</button>
+                                <button onclick="switchTab('cv-formation')" id="tab-cv-formation" class="tab-btn font-bold text-xs tracking-widest uppercase text-white">FORMATION</button>
+                                <button onclick="switchTab('cv-certifs')" id="tab-cv-certifs" class="tab-btn font-bold text-xs tracking-widest uppercase text-white">CERTIFICATIONS</button>
                             </div>
-                            <a href="https://drive.google.com/file/d/1Gur3t8otSiq0tgIYdcI7Uag71x6vlw5w/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="btn-netflix btn-red gap-2 text-sm mt-4 md:mt-0 shadow-xl font-bold text-white uppercase text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white">
+                            <a href="https://drive.google.com/file/d/1Gur3t8otSiq0tgIYdcI7Uag71x6vlw5w/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="btn-netflix btn-red gap-2 text-sm mt-4 md:mt-0 shadow-xl font-bold text-white uppercase">
                                 <i data-lucide="file-text"></i> <span>Consulter mon CV (PDF)</span>
                             </a>
                         </div>
-                        <div id="content-cv-profil" class="tab-content-cv text-white space-y-8 text-white text-white text-white text-white text-white text-white text-white text-white">
-                            <p class="text-xl md:text-2xl italic leading-relaxed text-gray-200 text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white">Actuellement étudiante en BTS Services Informatiques aux Organisations (SIO), option SISR, je me passionne pour la gestion des infrastructures et la cybersécurité. Je souhaiterai devenir Administratrice systèmes et réseaux.</p>
-                            <div class="text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white">
-                                <h5 class="text-red-600 font-bold uppercase text-base mb-6 tracking-widest border-l-4 border-red-600 pl-4 text-white text-white text-white text-white text-white text-white text-white text-white text-white">QUALITÉS</h5>
-                                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 text-center text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white">
-                                    <div class="bg-[#262626] p-5 rounded border-b-2 border-red-600 uppercase text-xs font-bold tracking-widest transition hover:bg-zinc-700 text-white text-white text-white text-white text-white text-white text-white text-white text-white">ORGANISÉE</div>
-                                    <div class="bg-[#262626] p-5 rounded border-b-2 border-red-600 uppercase text-xs font-bold tracking-widest transition hover:bg-zinc-700 text-white text-white text-white text-white text-white text-white text-white text-white text-white">ASSIDUE</div>
-                                    <div class="bg-[#262626] p-5 rounded border-b-2 border-red-600 uppercase text-xs font-bold tracking-widest transition hover:bg-zinc-700 text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white">MOTIVÉE</div>
-                                    <div class="bg-[#262626] p-5 rounded border-b-2 border-red-600 uppercase text-xs font-bold tracking-widest transition hover:bg-zinc-700 text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white">PONCTUELLE</div>
-                                    <div class="bg-[#262626] p-5 rounded border-b-2 border-red-600 uppercase text-xs font-bold tracking-widest transition hover:bg-zinc-700 text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white">AUTONOME</div>
-                                    <div class="bg-[#262626] p-5 rounded border-b-2 border-red-600 uppercase text-xs font-bold tracking-widest transition hover:bg-zinc-700 text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white">TRAVAIL D'ÉQUIPE</div>
+                        <div id="content-cv-profil" class="tab-content-cv text-white space-y-8">
+                            <p class="text-xl md:text-2xl italic leading-relaxed text-gray-200">Actuellement étudiante en BTS Services Informatiques aux Organisations (SIO), option SISR, je me passionne pour la gestion des infrastructures et la cybersécurité. Je souhaiterai devenir Administratrice systèmes et réseaux.</p>
+                            <div class="text-white">
+                                <h5 class="text-red-600 font-bold uppercase text-base mb-6 tracking-widest border-l-4 border-red-600 pl-4 text-white">QUALITÉS</h5>
+                                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 text-center">
+                                    <div class="bg-[#262626] p-5 rounded border-b-2 border-red-600 uppercase text-xs font-bold tracking-widest transition hover:bg-zinc-700 text-white">ORGANISÉE</div>
+                                    <div class="bg-[#262626] p-5 rounded border-b-2 border-red-600 uppercase text-xs font-bold tracking-widest transition hover:bg-zinc-700 text-white text-white">ASSIDUE</div>
+                                    <div class="bg-[#262626] p-5 rounded border-b-2 border-red-600 uppercase text-xs font-bold tracking-widest transition hover:bg-zinc-700 text-white">MOTIVÉE</div>
+                                    <div class="bg-[#262626] p-5 rounded border-b-2 border-red-600 uppercase text-xs font-bold tracking-widest transition hover:bg-zinc-700 text-white">PONCTUELLE</div>
+                                    <div class="bg-[#262626] p-5 rounded border-b-2 border-red-600 uppercase text-xs font-bold tracking-widest transition hover:bg-zinc-700 text-white">AUTONOME</div>
+                                    <div class="bg-[#262626] p-5 rounded border-b-2 border-red-600 uppercase text-xs font-bold tracking-widest transition hover:bg-zinc-700 text-white text-white">TRAVAIL D'ÉQUIPE</div>
                                 </div>
                             </div>
                         </div>
-                        <div id="content-cv-formation" class="tab-content-cv hidden text-white text-left space-y-6 text-white text-white text-white text-white text-white text-white text-white text-white">
-                            <div class="border-l-4 border-red-600 pl-6 text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white">
-                                <h4 class="text-xl font-bold uppercase italic text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white">BTS SIO (Option SISR)</h4>
-                                <p class="text-gray-400 text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white">Lycée XXX • 2024-2026 (en cours)</p>
+                        <div id="content-cv-formation" class="tab-content-cv hidden text-white text-left space-y-6">
+                            <div class="border-l-4 border-red-600 pl-6 text-white">
+                                <h4 class="text-xl font-bold uppercase italic text-white text-white">BTS SIO (Option SISR)</h4>
+                                <p class="text-gray-400 text-white text-white">Lycée XXX • 2024-2026 (en cours)</p>
                             </div>
-                            <div class="border-l-4 border-gray-600 pl-6 text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white">
-                                <h4 class="text-xl font-bold uppercase italic text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white">Baccalauréat Général</h4>
-                                <p class="text-gray-400 text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white">Lycée XXX • 2021-2024</p>
+                            <div class="border-l-4 border-gray-600 pl-6 text-white text-white text-white">
+                                <h4 class="text-xl font-bold uppercase italic text-white text-white">Baccalauréat Général</h4>
+                                <p class="text-gray-400 text-white text-white">Lycée XXX • 2021-2024</p>
                             </div>
                         </div>
-                        <div id="content-cv-certifs" class="tab-content-cv hidden text-white text-left text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white">
-                            <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white">
-                                <li class="flex items-center gap-3 bg-zinc-800/50 p-4 rounded text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white"><i data-lucide="shield-check" class="text-red-600 text-white text-white text-white text-white text-white text-white"></i> SecNum ANSSI</li>
-                                <li class="flex items-center gap-3 bg-zinc-800/50 p-4 rounded text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white"><i data-lucide="network" class="text-red-600 text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white"></i> Netacad Network</li>
-                                <li class="flex items-center gap-3 bg-zinc-800/50 p-4 rounded text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white"><i data-lucide="lock" class="text-red-600 text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white"></i> RGPD</li>
+                        <div id="content-cv-certifs" class="tab-content-cv hidden text-white text-left text-white text-white">
+                            <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 text-white">
+                                <li class="flex items-center gap-3 bg-zinc-800/50 p-4 rounded text-white"><i data-lucide="shield-check" class="text-red-600 text-white"></i> SecNum ANSSI</li>
+                                <li class="flex items-center gap-3 bg-zinc-800/50 p-4 rounded text-white"><i data-lucide="network" class="text-red-600 text-white"></i> Netacad Network</li>
+                                <li class="flex items-center gap-3 bg-zinc-800/50 p-4 rounded text-white text-white"><i data-lucide="lock" class="text-red-600 text-white"></i> RGPD</li>
                             </ul>
                         </div>
                     </div>
@@ -507,7 +506,6 @@
             }, 600);
         }
 
-        // Gestion Envoi Formulaire Contact (AJAX)
         const contactForm = document.getElementById("contact-form");
         if(contactForm) {
             contactForm.addEventListener("submit", function(e) {
@@ -515,10 +513,8 @@
                 const submitBtn = document.getElementById("contact-form-submit");
                 const status = document.getElementById("contact-form-status");
                 const formData = new FormData(this);
-
                 submitBtn.innerText = "Envoi en cours...";
                 submitBtn.disabled = true;
-
                 fetch(this.action, {
                     method: this.method,
                     body: formData,
@@ -550,7 +546,6 @@
             submitBtn.disabled = false;
         }
 
-        // Fonctions BTS
         function openBTSPresentation() { document.getElementById('bts-presentation-modal').style.display = 'block'; document.body.style.overflow = 'hidden'; lucide.createIcons(); }
         function closeBTSPresentation() { document.getElementById('bts-presentation-modal').style.display = 'none'; document.body.style.overflow = 'auto'; }
         function switchBTSTab(tabId) {
@@ -561,7 +556,6 @@
             lucide.createIcons();
         }
 
-        // Fonctions Profil
         function openFullProfile() { document.getElementById('profile-detail-modal').style.display = 'block'; document.body.style.overflow = 'hidden'; lucide.createIcons(); }
         function closeFullProfile() { document.getElementById('profile-detail-modal').style.display = 'none'; document.body.style.overflow = 'auto'; }
         function switchTab(tabId) {
@@ -578,10 +572,26 @@
             const modalTitle = document.getElementById('modal-title');
             const modalDescription = document.getElementById('modal-description');
             const modalPdfAction = document.getElementById('modal-pdf-action');
-            const btnOpenPdfLink = document.getElementById('btn-open-pdf-link');
             modalTitle.innerText = data.title;
             modalDescription.innerHTML = data.desc || "";
-            if (data.pdf) { modalPdfAction.classList.remove('hidden'); btnOpenPdfLink.href = data.pdf; } else { modalPdfAction.classList.add('hidden'); }
+            modalPdfAction.innerHTML = ""; 
+            if (data.pdf) {
+                modalPdfAction.classList.remove('hidden');
+                const pdfList = Array.isArray(data.pdf) ? data.pdf : [data.pdf];
+                pdfList.forEach((pdf, index) => {
+                    const link = typeof pdf === 'string' ? pdf : pdf.url;
+                    const label = typeof pdf === 'object' && pdf.label ? pdf.label : (pdfList.length > 1 ? `Consulter le document ${index + 1} (PDF)` : `Consulter le document (PDF)`);
+                    const btn = document.createElement('a');
+                    btn.href = link;
+                    btn.target = "_blank";
+                    btn.rel = "noopener noreferrer";
+                    btn.className = "btn-netflix btn-white gap-3 px-8 mt-4 shadow-xl text-black font-bold flex items-center";
+                    btn.innerHTML = `<i data-lucide="external-link"></i> <span>${label}</span>`;
+                    modalPdfAction.appendChild(btn);
+                });
+            } else {
+                modalPdfAction.classList.add('hidden');
+            }
             document.getElementById('modal-container').style.display = 'block';
             document.body.style.overflow = 'hidden';
             lucide.createIcons();
@@ -590,135 +600,72 @@
         function closeModal() { document.getElementById('modal-container').style.display = 'none'; document.body.style.overflow = 'auto'; }
 
         const content = {
-            'proj-mfa': { title: "MFA Offline / Online", pdf: "https://drive.google.com/file/d/1nRoVmA1X1FHFFQrrVfdfzlLK6rRuT7_R/view?usp=drive_link", desc: "Mise en place d’une solution d’authentification forte (MFA), intégrée à l’Active Directory afin de renforcer significativement la sécurité des accès utilisateurs" },
+            'proj-mfa': { title: "MFA Offline / Online", pdf: "https://drive.google.com/file/d/1nRoVmA1X1FHFFQrrVfdfzlLK6rRuT7_R/view?usp=drive_link", desc: "Mise en place d’une solution d’authentification forte (MFA), intégrée à l’Active Directory." },
             'proj-glpi': { title: "GLPI - Gestion de Parc", pdf: "https://drive.google.com/file/d/1hqulC0F_6fv-_aFFIvCiAxpD8hrNWRn1/view?usp=drive_link", desc: "Installation et configuration de GLPI pour le support utilisateur." },
-            'proj-gsb': { title: "Projet GSB", pdf: "https://drive.google.com/file/d/1vLBZtZGGZi_HzK_hncdI-0qJTT6PhxJT/view?usp=drive_link", desc: "Mise en place de l'infrastructure réseau et services de l'organisation GSB. (Galaxy Swiss Bourdin)" },
+            'proj-gsb': { title: "Projet GSB", pdf: "https://drive.google.com/file/d/1vLBZtZGGZi_HzK_hncdI-0qJTT6PhxJT/view?usp=drive_link", desc: "Mise en place de l'infrastructure réseau et services de l'organisation GSB." },
             'grille-comp': { title: "Grille de Compétences", pdf: "https://drive.google.com/file/d/16vS6TTGRzuwV_YppF4Roz5hwvp8TVa8_/view?usp=drive_link", desc: "Tableau de synthèse des réalisations professionnelles BTS SIO 2026." },
-            'stage-xelya-2': { title: "XELYA (Saison 2)", desc: "Support utilisateur: assistance de premier et deuxième niveau sur les demandes courantes.<br>Interventions chez des clients: participations aux installations et dépannages<br>Préparation de matériel: configuration (AD etc) et mise en service des équipements<br>Supervision réseau: suivi des alertes et apprentissage des outils de monitoring" },
-            'stage-xelya-1': { title: "XELYA (Saison 1)", desc: "Stage de découverte et première expérience en environnement professionnel informatique. déploiement de postes (Mise en place de l'AD, domaine local etc), Intervention sur site" },
+            'stage-xelya-2': { 
+                title: "XELYA (Saison 2)", 
+                pdf: [
+                    { label: "Document Stage 1", url: "https://drive.google.com/file/d/1CMrKw-C5ExMh_1RoaA-r44YhBfj9in73/view?usp=drive_link" },
+                    { label: "Document Stage 2", url: "https://drive.google.com/file/d/1iQt0fDh1YUHBE7y0Iqe3DcUkTCqn4bhp/view?usp=drive_link" }
+                ],
+                desc: "Support utilisateur: assistance de premier et deuxième niveau sur les demandes courantes.<br>Interventions chez des clients: participations aux installations et dépannages<br>Préparation de matériel: configuration (AD etc) et mise en service des équipements<br>Supervision réseau: suivi des alertes et apprentissage des outils de monitoring" 
+            },
+            'stage-xelya-1': { 
+                title: "XELYA (Saison 1)", 
+                pdf: "https://drive.google.com/file/d/1g-i8kz-mK3DOMYDfzMPxz3Gv9j5TW-s4/view?usp=drive_link",
+                desc: "Support utilisateur: assistance de premier niveau sur les demandes courantes.<br>Interventions chez des clients: participations aux installations et dépannages<br>Préparation de matériel: configuration (AD etc) et mise en service des équipements<br>Supervision réseau: suivi des alertes et apprentissage des outils de monitoring" 
+            },
             'veille-tech': {
                 title: "Veille Technologique",
                 desc: `
                     <div class="space-y-8 text-left text-white">
-                        <div class="bg-red-600/10 border border-red-600 p-6 rounded-lg shadow-lg text-white text-white text-white">
-                            <h6 class="text-red-500 font-black uppercase text-xs tracking-widest mb-2 text-white text-white text-white text-white">Mon sujet de veille :</h6>
-                            <h4 class="text-2xl font-bold italic text-white leading-tight text-white text-white text-white text-white">Comment l'IA aide à détecter les cybermenaces</h4>
+                        <div class="bg-red-600/10 border border-red-600 p-6 rounded-lg shadow-lg text-white">
+                            <h6 class="text-red-500 font-black uppercase text-xs tracking-widest mb-2">Mon sujet de veille :</h6>
+                            <h4 class="text-2xl font-bold italic text-white leading-tight">Comment l'IA aide à détecter les cybermenaces</h4>
                         </div>
-
-                        <div class="bg-zinc-900/50 p-6 rounded-lg border-l-4 border-red-600 shadow-xl text-white text-white text-white text-white">
-                            <h5 class="text-red-600 font-black uppercase italic tracking-tighter text-xl mb-4 text-white text-white text-white text-white">L'IA & La Cybersécurité : État des lieux</h5>
-                            <p class="text-gray-300 leading-relaxed mb-4 text-white text-white text-white text-white text-white">Augmentation massive des cyberattaques (<span class="text-white font-bold text-white text-white text-white text-white">+600% d’attaques IA-driven en 2023</span>). L’IA devient un outil clé pour anticiper et répondre aux menaces.</p>
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-white text-white text-white">
-                                <div class="bg-zinc-800 p-3 rounded text-white">Machine Learning pour la détection</div>
+                        <div class="bg-zinc-900/50 p-6 rounded-lg border-l-4 border-red-600 shadow-xl text-white">
+                            <h5 class="text-red-600 font-black uppercase italic tracking-tighter text-xl mb-4 text-white">L'IA & La Cybersécurité : État des lieux</h5>
+                            <p class="text-gray-300 leading-relaxed mb-4 text-white">Augmentation massive des cyberattaques (+600% d’attaques IA-driven en 2023). L’IA devient un outil clé pour anticiper et répondre aux menaces.</p>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-white">
+                                <div class="bg-zinc-800 p-3 rounded">Machine Learning pour la détection</div>
                                 <div class="bg-zinc-800 p-3 rounded text-white">Automatisation des réponses (SOAR)</div>
-                                <div class="bg-zinc-800 p-3 rounded col-span-full text-white text-white text-white">Menaces émergentes : Deepfakes & IA Générative</div>
+                                <div class="bg-zinc-800 p-3 rounded col-span-full text-white">Menaces émergentes : Deepfakes & IA Générative</div>
                             </div>
                         </div>
-
-                        <div class="text-white text-white">
-                            <h5 class="text-white font-black uppercase text-xl mb-6 border-b border-zinc-800 pb-2 text-white text-white text-white">Processus de détection par l'IA</h5>
-                            <div class="relative pl-8 space-y-6 before:content-[''] before:absolute before:left-[11px] before:top-2 before:bottom-2 before:w-[2px] before:bg-zinc-800 text-left text-white text-white text-white">
-                                <div class="relative text-white text-white">
-                                    <div class="absolute -left-[31px] top-0 w-6 h-6 bg-red-600 rounded-full flex items-center justify-center border-4 border-[#181818] text-white"><i data-lucide="database" class="w-3 h-3 text-white text-white text-white"></i></div>
-                                    <h6 class="text-red-500 font-bold text-sm uppercase text-white text-white text-white">1. Collecte de données</h6>
-                                    <p class="text-xs text-gray-400 text-white text-white text-white">Logs, trafic réseau, événements système.</p>
-                                </div>
-                                <div class="relative text-white text-white text-white">
-                                    <div class="absolute -left-[31px] top-0 w-6 h-6 bg-red-600 rounded-full flex items-center justify-center border-4 border-[#181818] text-white text-white"><i data-lucide="filter" class="w-3 h-3 text-white text-white text-white text-white"></i></div>
-                                    <h6 class="text-red-500 font-bold text-sm uppercase text-white text-white text-white text-white text-white">2. Prétraitement</h6>
-                                    <p class="text-xs text-gray-400 text-white text-white text-white text-white text-white">Filtrage et normalisation des flux entrants.</p>
-                                </div>
-                                <div class="relative text-white text-white text-white text-white">
-                                    <div class="absolute -left-[31px] top-0 w-6 h-6 bg-red-600 rounded-full flex items-center justify-center border-4 border-[#181818] text-white text-white text-white"><i data-lucide="cpu" class="w-3 h-3 text-white text-white text-white text-white text-white text-white"></i></div>
-                                    <h6 class="text-red-500 font-bold text-sm uppercase text-white text-white text-white text-white text-white text-white">3. Analyse IA / ML</h6>
-                                    <p class="text-xs text-gray-400 text-white text-white text-white text-white text-white text-white">Détection d'anomalies, malwares et tentatives d'attaques.</p>
-                                </div>
-                                <div class="relative text-white text-white text-white text-white text-white">
-                                    <div class="absolute -left-[31px] top-0 w-6 h-6 bg-red-600 rounded-full flex items-center justify-center border-4 border-[#181818] text-white text-white text-white text-white text-white"><i data-lucide="zap" class="w-3 h-3 text-white text-white text-white text-white text-white text-white text-white"></i></div>
-                                    <h6 class="text-red-500 font-bold text-sm uppercase text-white text-white text-white text-white text-white text-white text-white">4. Alertes et réponses</h6>
-                                    <p class="text-xs text-gray-400 text-white text-white text-white text-white text-white text-white text-white">Déclenchement d'actions automatisées de remédiation.</p>
-                                </div>
-                                <div class="relative text-white text-white text-white text-white text-white text-white">
-                                    <div class="absolute -left-[31px] top-0 w-6 h-6 bg-red-600 rounded-full flex items-center justify-center border-4 border-[#181818] text-white text-white text-white text-white text-white text-white"><i data-lucide="refresh-ccw" class="w-3 h-3 text-white text-white text-white text-white text-white text-white text-white text-white"></i></div>
-                                    <h6 class="text-red-500 font-bold text-sm uppercase text-white text-white text-white text-white text-white text-white text-white text-white">5. Amélioration continue</h6>
-                                    <p class="text-xs text-gray-400 text-white text-white text-white text-white text-white text-white text-white text-white text-white">Apprentissage constant des nouvelles signatures de menaces.</p>
-                                </div>
+                        <div>
+                            <h5 class="text-white font-black uppercase text-xl mb-6 border-b border-zinc-800 pb-2 text-white">Processus de détection par l'IA</h5>
+                            <div class="relative pl-8 space-y-6 before:content-[''] before:absolute before:left-[11px] before:top-2 before:bottom-2 before:w-[2px] before:bg-zinc-800 text-left text-white">
+                                <div class="relative"><div class="absolute -left-[31px] top-0 w-6 h-6 bg-red-600 rounded-full flex items-center justify-center border-4 border-[#181818]"><i data-lucide="database" class="w-3 h-3 text-white"></i></div><h6 class="text-red-500 font-bold text-sm uppercase">1. Collecte de données</h6><p class="text-xs text-gray-400">Logs, trafic réseau, événements système.</p></div>
+                                <div class="relative"><div class="absolute -left-[31px] top-0 w-6 h-6 bg-red-600 rounded-full flex items-center justify-center border-4 border-[#181818] text-white"><i data-lucide="filter" class="w-3 h-3 text-white"></i></div><h6 class="text-red-500 font-bold text-sm uppercase">2. Prétraitement</h6><p class="text-xs text-gray-400">Filtrage et normalisation des flux entrants.</p></div>
+                                <div class="relative text-white"><div class="absolute -left-[31px] top-0 w-6 h-6 bg-red-600 rounded-full flex items-center justify-center border-4 border-[#181818]"><i data-lucide="cpu" class="w-3 h-3 text-white"></i></div><h6 class="text-red-500 font-bold text-sm uppercase">3. Analyse IA / ML</h6><p class="text-xs text-gray-400">Détection d'anomalies, malwares et tentatives d'attaques.</p></div>
+                                <div class="relative"><div class="absolute -left-[31px] top-0 w-6 h-6 bg-red-600 rounded-full flex items-center justify-center border-4 border-[#181818] text-white"><i data-lucide="zap" class="w-3 h-3 text-white"></i></div><h6 class="text-red-500 font-bold text-sm uppercase">4. Alertes et réponses</h6><p class="text-xs text-gray-400">Déclenchement d'actions automatisées de remédiation.</p></div>
+                                <div class="relative"><div class="absolute -left-[31px] top-0 w-6 h-6 bg-red-600 rounded-full flex items-center justify-center border-4 border-[#181818] text-white text-white text-white"><i data-lucide="refresh-ccw" class="w-3 h-3 text-white"></i></div><h6 class="text-red-500 font-bold text-sm uppercase">5. Amélioration continue</h6><p class="text-xs text-gray-400 text-white">Apprentissage constant des nouvelles signatures de menaces.</p></div>
                             </div>
                         </div>
-
-                        <div class="text-white text-white text-white">
-                            <h5 class="text-white font-black uppercase text-xl mb-6 border-b border-zinc-800 pb-2 flex items-center gap-2 text-white text-white text-white text-white">
-                                <i data-lucide="newspaper" class="text-red-600 text-white"></i> Articles & Sources
-                            </h5>
-                            <div class="space-y-4 text-white text-white text-white">
-                                <a href="https://www.zdnet.fr/actualites/deepfake-il-vire-25-millions-de-dollars-apres-avoir-participe-a-une-videoconference-39964516.htm" target="_blank" class="block bg-zinc-900/80 p-5 rounded-lg border-l-4 border-red-600 hover:bg-zinc-800 transition group text-left shadow-lg text-white text-white text-white text-white text-white">
-                                    <div class="flex justify-between items-start mb-2 text-white text-white text-white text-white text-white">
-                                        <h6 class="text-red-500 font-bold text-sm uppercase group-hover:text-white transition text-white text-white text-white">Escroquerie : 25M$ par Deepfake Visioconférence</h6>
-                                        <i data-lucide="external-link" class="w-4 h-4 text-zinc-600 group-hover:text-red-600 text-white text-white text-white text-white"></i>
-                                    </div>
-                                    <p class="text-xs text-gray-300 leading-relaxed italic text-white text-white text-white text-white text-white text-white">
-                                        Cas réel : Un employé financier piégé par des clones numériques de ses supérieurs lors d'une visioconférence.
-                                    </p>
-                                </a>
-
-                                <a href="https://www.lemondeinformatique.fr/actualites/lire-l-ia-generative-une-menace-croissante-pour-la-cybersecurite-92631.html" target="_blank" class="block bg-zinc-900/80 p-5 rounded-lg border border-zinc-800 hover:border-red-600 transition group text-left shadow-lg text-white text-white text-white text-white text-white">
-                                    <div class="flex justify-between items-start mb-2 text-white text-white text-white text-white text-white text-white">
-                                        <h6 class="text-red-500 font-bold text-sm uppercase group-hover:text-white transition text-white text-white text-white text-white text-white text-white">L'IA générative : une menace croissante</h6>
-                                        <i data-lucide="external-link" class="w-4 h-4 text-zinc-600 group-hover:text-red-600 text-white text-white text-white text-white text-white text-white"></i>
-                                    </div>
-                                    <p class="text-xs text-gray-400 leading-relaxed italic text-white text-white text-white text-white text-white text-white text-white">
-                                        Analyse de l'utilisation de l'IA par les hackers pour automatiser le phishing et créer des malwares polymorphes.
-                                    </p>
-                                </a>
-
-                                <a href="https://www.usine-digitale.fr/article/cybersecurite-l-ia-le-nouveau-bouclier-des-entreprises.N2206584" target="_blank" class="block bg-zinc-900/80 p-5 rounded-lg border border-zinc-800 hover:border-red-600 transition group text-left shadow-lg text-white text-white text-white text-white text-white text-white text-white">
-                                    <div class="flex justify-between items-start mb-2 text-white text-white text-white text-white text-white text-white text-white text-white">
-                                        <h6 class="text-red-500 font-bold text-sm uppercase group-hover:text-white transition text-white text-white text-white text-white text-white text-white text-white">L'IA, le nouveau bouclier des entreprises</h6>
-                                        <i data-lucide="external-link" class="w-4 h-4 text-zinc-600 group-hover:text-red-600 text-white text-white text-white text-white text-white text-white text-white text-white text-white"></i>
-                                    </div>
-                                    <p class="text-xs text-gray-400 leading-relaxed italic text-white text-white text-white text-white text-white text-white text-white text-white">
-                                        Comment les outils de détection (EDR/XDR) utilisent l'apprentissage profond pour identifier des comportements suspects.
-                                    </p>
-                                </a>
+                        <div>
+                            <h5 class="text-white font-black uppercase text-xl mb-6 border-b border-zinc-800 pb-2 flex items-center gap-2 text-white"><i data-lucide="newspaper" class="text-red-600"></i> Articles & Sources</h5>
+                            <div class="space-y-4">
+                                <a href="https://www.zdnet.fr/actualites/deepfake-il-vire-25-millions-de-dollars-apres-avoir-participe-a-une-videoconference-39964516.htm" target="_blank" class="block bg-zinc-900/80 p-5 rounded-lg border-l-4 border-red-600 hover:bg-zinc-800 transition group text-left shadow-lg text-white"><div class="flex justify-between items-start mb-2"><h6 class="text-red-500 font-bold text-sm uppercase group-hover:text-white transition">Escroquerie : 25M$ par Deepfake Visioconférence</h6><i data-lucide="external-link" class="w-4 h-4 text-zinc-600 group-hover:text-red-600"></i></div><p class="text-xs text-gray-300 leading-relaxed italic text-white">Cas réel : Un employé financier piégé par des clones numériques de ses supérieurs.</p></a>
+                                <a href="https://www.lemondeinformatique.fr/actualites/lire-l-ia-generative-une-menace-croissante-pour-la-cybersecurite-92631.html" target="_blank" class="block bg-zinc-900/80 p-5 rounded-lg border border-zinc-800 hover:border-red-600 transition group text-left shadow-lg text-white text-white"><div class="flex justify-between items-start mb-2"><h6 class="text-red-500 font-bold text-sm uppercase group-hover:text-white transition text-white">L'IA générative : une menace croissante</h6><i data-lucide="external-link" class="w-4 h-4 text-zinc-600 group-hover:text-red-600"></i></div><p class="text-xs text-gray-400 leading-relaxed italic">Analyse de l'utilisation de l'IA par les hackers pour automatiser le phishing.</p></a>
                             </div>
                         </div>
-
-                        <!-- METHODOLOGIE & RSS -->
-                        <div class="bg-zinc-900/50 p-6 rounded-lg border-l-4 border-white shadow-xl text-white text-white text-white text-white text-white text-white">
-                            <h5 class="text-white font-black uppercase italic tracking-tighter text-xl mb-4 text-white text-white text-white text-white text-white text-white text-white">Méthodologie & Flux RSS</h5>
-                            <p class="text-gray-300 text-sm leading-relaxed mb-4 italic text-white text-white text-white text-white text-white text-white">Veille automatisée mise en place via <a href="https://www.google.fr/alerts" target="_blank" class="text-red-500 underline text-white text-white text-white">Google Alerts</a>.</p>
-                            <div class="flex items-center gap-3 bg-zinc-800 p-3 rounded text-white text-white text-white text-white text-white text-white text-white text-white">
-                                <i data-lucide="rss" class="text-red-600 text-white text-white text-white text-white text-white text-white"></i>
-                                <span class="text-xs text-gray-200 font-bold uppercase tracking-widest text-white text-white text-white text-white text-white text-white text-white">Flux Actif : "Cybersécurité IA" + "Deepfake Finance"</span>
+                        <div class="bg-zinc-900/50 p-6 rounded-lg border-l-4 border-white shadow-xl text-white">
+                            <h5 class="text-white font-black uppercase italic tracking-tighter text-xl mb-4 text-white">Méthodologie & Flux RSS</h5>
+                            <p class="text-gray-300 text-sm leading-relaxed mb-4 italic">Veille automatisée via Google Alerts.</p>
+                            <div class="flex items-center gap-3 bg-zinc-800 p-3 rounded text-white">
+                                <i data-lucide="rss" class="text-red-600 text-white text-white"></i>
+                                <span class="text-xs text-gray-200 font-bold uppercase tracking-widest text-white">Flux Actif : "Cybersécurité IA" + "Deepfake Finance"</span>
                             </div>
                         </div>
-
-                        <!-- BILAN PERSONNEL -->
-                        <div class="bg-zinc-900 border border-zinc-800 p-8 rounded-xl shadow-2xl relative overflow-hidden text-white text-white text-white text-white text-white text-white text-white">
-                            <div class="absolute top-0 right-0 w-24 h-24 bg-red-600/10 rounded-full -mr-12 -mt-12 blur-2xl text-white text-white text-white text-white text-white text-white text-white text-white"></div>
-                            <h5 class="text-white font-black uppercase text-2xl mb-8 italic tracking-tighter border-l-4 border-red-600 pl-4 text-white text-white text-white text-white text-white text-white">Analyse Personnelle & Bilan</h5>
-                            
-                            <div class="space-y-6 text-white text-white text-white text-white text-white text-white">
-                                <div class="text-white text-white text-white text-white">
-                                    <h6 class="text-red-500 font-bold text-sm uppercase mb-2 text-white text-white text-white text-white text-white text-white">Pourquoi ce sujet ?</h6>
-                                    <p class="text-gray-300 text-sm leading-relaxed text-white text-white text-white text-white text-white text-white text-white">
-                                        J'ai choisi le sujet de l'IA dans la détection des cybermenaces car c'est une technologie qui transforme radicalement la sécurité des systèmes et réseaux. En tant que future administratrice SISR, il est crucial pour moi d'anticiper comment ces outils automatisent la protection des données face à des attaques de plus en plus rapides et complexes.
-                                    </p>
-                                </div>
-                                
-                                <div class="text-white text-white text-white text-white text-white text-white">
-                                    <h6 class="text-red-500 font-bold text-sm uppercase mb-2 text-white text-white text-white text-white text-white text-white text-white text-white">Ce que j'ai appris</h6>
-                                    <p class="text-gray-300 text-sm leading-relaxed text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white">
-                                        Cette veille m'a permis de découvrir le fonctionnement concret du Machine Learning appliqué au trafic réseau. J'ai appris que l'IA permet de passer d'une sécurité réactive (basée sur des signatures de virus connues) à une sécurité prédictive capable d'identifier des comportements anormaux inédits. J'ai aussi pris conscience des nouveaux dangers comme les arnaques au deepfake.
-                                    </p>
-                                </div>
-
-                                <div class="bg-zinc-800/50 p-4 rounded-lg border-t-2 border-red-600 text-white text-white text-white text-white text-white text-white text-white">
-                                    <h6 class="text-white font-bold text-sm uppercase mb-2 text-white text-white text-white text-white text-white text-white text-white text-white text-white">Conclusion de veille</h6>
-                                    <p class="text-gray-400 text-xs italic leading-relaxed text-white text-white text-white text-white text-white text-white text-white text-white text-white text-white">
-                                        Je conclus que l'humain reste indispensable pour superviser et prendre les décisions finales, mais que l'IA est devenue un partenaire incontournable. À l'avenir, la maîtrise des solutions de détection pilotées par l'intelligence artificielle sera une compétence clé pour garantir la résilience de toute infrastructure informatique.
-                                    </p>
-                                </div>
+                        <div class="bg-zinc-900 border border-zinc-800 p-8 rounded-xl shadow-2xl relative overflow-hidden text-white">
+                            <div class="absolute top-0 right-0 w-24 h-24 bg-red-600/10 rounded-full -mr-12 -mt-12 blur-2xl text-white"></div>
+                            <h5 class="text-white font-black uppercase text-2xl mb-8 italic tracking-tighter border-l-4 border-red-600 pl-4 text-white">Analyse Personnelle & Bilan</h5>
+                            <div class="space-y-6 text-white text-white">
+                                <div><h6 class="text-red-500 font-bold text-sm uppercase mb-2 text-white">Pourquoi ce sujet ?</h6><p class="text-gray-300 text-sm leading-relaxed text-white">J'ai choisi le sujet de l'IA dans la détection des cybermenaces car c'est une technologie qui transforme radicalement la sécurité des systèmes et réseaux. En tant que future administratrice SISR, il est crucial pour moi d'anticiper comment ces outils automatisent la protection.</p></div>
+                                <div><h6 class="text-red-500 font-bold text-sm uppercase mb-2 text-white">Ce que j'ai appris</h6><p class="text-gray-300 text-sm leading-relaxed text-white">Cette veille m'a permis de découvrir le fonctionnement concret du Machine Learning appliqué au trafic réseau. J'ai appris que l'IA permet de passer d'une sécurité réactive à une sécurité prédictive.</p></div>
+                                <div class="bg-zinc-800/50 p-4 rounded-lg border-t-2 border-red-600 text-white"><h6 class="text-white font-bold text-sm uppercase mb-2 text-white">Conclusion de veille</h6><p class="text-gray-400 text-xs italic leading-relaxed text-white">Je conclus que l'humain reste indispensable pour superviser les décisions finales, mais que l'IA est devenue un partenaire incontournable.</p></div>
                             </div>
                         </div>
                     </div>
